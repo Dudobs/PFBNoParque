@@ -1,0 +1,11 @@
+{
+  "colors": {
+    "background": "#f0f0f0",
+    "shadow": "#CCC",
+    "subtitle": "#0191A4",
+    "link": "#009688",
+    "title": "#3F51B5",
+    "font": "#334155",
+    "list": "#121212"
+  }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Agendamentos</title>
+  </head>
+
+  <body>
+    <header>
+      <img
+        id="banner"
+        src="./images/banner.png"
+        alt="Logo 'PFB progressivefitball no parque' com fundo no parque"
+      />
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#benefits">Benefícios</a>
+      <a href="#modalities">Modalidades</a>
+      <a href="#training">Treinos</a>
+    </nav>
+
+    <main>
+      <h1>Agendamentos</h1>
+
+      <p>Agende uma aula experimental grátis!</p>
+
+      <form name="frm-agendamento" method="GET" action="">
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          name="nome"
+          size="30"
+          id="nome"
+          maxlength="50"
+          placeholder="Nome Completo"
+          required
+        />
+
+        <label for="email">Email:</label>
+
+        <input
+          type="email"
+          name="email"
+          size="30"
+          id="email"
+          placeholder="exemplo@email.com"
+        />
+
+        <label for="senha">Senha:</label>
+
+        <input
+          type="password"
+          name="senha"
+          size="30"
+          id="senha"
+          placeholder="********"
+        />
+
+        <label for="numero">Celular:</label>
+
+        <input
+          type="tel"
+          name="numero"
+          size="30"
+          id="numero"
+          placeholder="(99)9999-9999"
+          pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$"
+        />
+
+        <div id="flex">
+          <div class="inline">
+            <label for="data">Data:</label>
+            <input type="date" name="data" id="data" />
+          </div>
+          <div class="inline">
+            <label for="hora">Horário</label>
+            <input type="time" name="hora" id="hora" />
+          </div>
+          <div class="inline">
+            <label for="aulas">Aulas:</label>
+            <input
+              type="number"
+              name="aulas"
+              id="aulas"
+              min="1"
+              max="99"
+              step="1"
+            />
+          </div>
+        </div>
+
+        <label for="products">Nível:</label>
+        <input list="products" size="30" placeholder="Selecione" />
+        <datalist id="products">
+          <option value="Básico"></option>
+          <option value="Intermediario"></option>
+          <option value="Avançado"></option>
+        </datalist>
+
+        <fieldset>
+          <legend>Gênero</legend>
+          <input type="radio" name="gender" id="masculine" value="masc" />
+          <label for="masculine">Masculino</label>
+
+          <input type="radio" name="gender" id="feminine" value="fem" />
+          <label for="feminine">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Atividades</legend>
+          <input type="checkbox" name="activities" id="bodybuilding" />
+          <label for="bodybuilding">Musculação</label>
+
+          <input type="checkbox" name="activities" id="running" />
+          <label for="running">Corrida</label>
+
+          <input type="checkbox" name="activities" id="pilates" />
+          <label for="pilates">Pilates</label>
+        </fieldset>
+
+        <label for="message">Mensagem</label>
+
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="4"
+          placeholder="Digite uma mensagem"
+        ></textarea>
+
+        <div id="buttons">
+          <input id="submit" type="submit" name="bt-enviar" value="Enviar" />
+          <input id="reset" type="reset" name="bt-limpar" value="Limpar" />
+        </div>
+      </form>
+    </main>
+
+    <footer id="footer">
+      <p>
+        Desenvolvido por
+        <a href="http://github.com/Dudobs" target="_blank"
+          >Dudobs <img src="images/github-icon.svg" alt="" />
+        </a>
+        2022
+      </p>
+    </footer>
+  </body>
+</html>
